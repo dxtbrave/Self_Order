@@ -1,12 +1,12 @@
-# 云开发 quickstart
+# 微信点餐小程序
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+利用vant weapp组件库、原生小程序、云开发及云数据库开发的微信点餐小程序
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+# 当前进度
 
-## 参考文档
+- 已完成菜品展示、菜品规格选择、个人登录等功能
+
+### 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
-
+- [Vant组件库](https://vant-contrib.gitee.io/vant-weapp/#/home)

@@ -1,0 +1,1 @@
+"F:\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-6ginadma447e4f94 --n quickstartFunctions --r --project "F:\小程序学习\Self_Order" --report_first --report

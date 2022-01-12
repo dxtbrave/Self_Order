@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的信息",
+  "usingComponents": {
+    "van-transition": "@vant/weapp/transition/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "header":"/pages/profile/childCpns/header/header",
+    "list-view":"/pages/profile/childCpns/list-view/list-view"
+  }
+}

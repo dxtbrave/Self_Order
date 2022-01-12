@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "订单",
+  "usingComponents": {
+    "van-empty": "@vant/weapp/empty/index"
+  }
+}

@@ -1,0 +1,16 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+  <scroll-view class="profile-list" scroll-y>
+    <!-- 个人信息卡片 -->
+    <header id="header"
+          bind:showLoading="showLoading" 
+          bind:closeLoading="closeLoading"
+          bind:showDialog="showDialog" />
+  <!-- 我的消息、积分商城、会员卡、 我的购物车、下载购物APP卡片 -->
+  <list-view serviceList="{{serviceList}}" />
+  </scroll-view>
+  <van-toast id="van-toast" />
+  <van-dialog id="van-dialog" />
+
+</view>
+

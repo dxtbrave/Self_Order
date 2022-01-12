@@ -1,0 +1,37 @@
+<!--pages/menu/childCpns/food-pop/food-pop.wxml-->
+<view class="food-pop">
+  <!-- 菜品展示 -->
+  <van-row custom-class="food-info">
+    <!-- 菜品图片 -->
+    <van-col span="7">
+      <van-image width="90" height="90" fit="cover" src="{{info.imgUrl}}" />
+    </van-col>
+    <!-- 详细信息 -->
+    <van-col span="8">
+      <view class="title">{{info.name}}</view>
+      <view class="sales">月销量：{{info.sales}}</view>
+      <view class="price">￥{{totalPrice}}</view>
+    </van-col>
+  </van-row>
+
+  <!-- 菜品规格选择 -->
+  <van-row>
+    <van-checkbox-group value="{{ checkList }}" bind:change="onChange" class="checkbox-group">
+      <view class="flexbox">
+        <block wx:for="{{selectList}}" wx:key="index">
+          <van-checkbox name="{{item.name}}" shape="square" custom-class="checkbox" checked-color="#017f61">{{item.text}}</van-checkbox>
+        </block>
+      </view>
+    </van-checkbox-group>
+  </van-row>
+
+  <!-- 加入购物车按钮 -->
+  <van-row>
+    <van-col span="20" offset="2">
+      <van-button color="#017f61" round custom-class="btn" bind:click="">
+        加入购物车
+      </van-button>
+    </van-col>
+  </van-row>
+
+</view>

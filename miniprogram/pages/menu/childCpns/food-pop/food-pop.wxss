@@ -1,0 +1,37 @@
+/* pages/menu/childCpns/food-pop/food-pop.wxss */
+.food-pop{
+  position: relative;
+}
+.btn{
+  width: 100%;
+  font-size: 30rpx!important;
+  height: 80rpx!important;
+}
+.flexbox{
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  display: flex;
+  justify-content:space-around;
+}
+.checkbox{
+  margin-top: 10rpx;
+}
+.food-info{
+  margin: 30rpx 30rpx;
+  height: 180rpx;
+}
+.food-info .title{
+  font-size: 34rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
+.food-info .sales{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  color: #BEBEBE;
+}
+.food-info .price{
+  color:red;
+  margin-top: 10rpx;
+  font-size: 34rpx;
+}

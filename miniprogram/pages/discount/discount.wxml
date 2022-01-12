@@ -1,0 +1,2 @@
+<!--pages/discount/discount.wxml-->
+<van-empty description="您还没有优惠券" />

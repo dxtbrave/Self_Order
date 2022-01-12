@@ -1,0 +1,34 @@
+<!--pages/profile/childCpns/header/header.wxml-->
+<view class="bac">
+  <view class="header" wx:if="{{isHeader}}">
+    <view class="avatar">
+      <image src="{{userInfo.avatarUrl}}" />
+    </view>
+    <view class="login-info">
+      <view class="username">{{userInfo.nickName}}</view>
+      <view class="gender">性别:{{userInfo.gender == 0 ? '男' : '女'}}</view>
+    </view>
+    <view class="arrow">
+      <van-button color="#017f61" icon="arrow-left" bind:click="handleSignout">退出登录</van-button>
+    </view>
+  </view>
+  <view class="header" wx:else>
+    <!-- 头像 -->
+    <view class="avatar">
+      <van-icon size="4em" name="user-o" />
+    </view>
+    <!-- 登录信息类 -->
+    <view class="login-info">
+      <view class="login" bind:tap="handleLogin">登录/注册</view>
+      <view class="phone">
+        <van-icon name="eye-o" size="1em" />
+        登录需通过用户授权
+      </view>
+
+    </view>
+    <!-- 右侧点击 -->
+    <view class="arrow" bind:tap="handleLogin">
+      <van-icon name="arrow" size="2em" />
+    </view>
+  </view>
+</view>

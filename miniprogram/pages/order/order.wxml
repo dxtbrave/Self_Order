@@ -1,0 +1,2 @@
+<!--pages/order/order.wxml-->
+<van-empty description="暂无订单记录" />

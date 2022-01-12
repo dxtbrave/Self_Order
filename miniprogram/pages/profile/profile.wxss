@@ -1,0 +1,6 @@
+.profile{
+  height: 100%;
+}
+.profile-list{
+  height: calc(100% - 88rpx);
+}

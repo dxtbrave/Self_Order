@@ -1,0 +1,25 @@
+/* pages/menu/menu.wxss */
+.menu{
+  height: 100vh;
+  display: flex;
+}
+.menu-class{
+  width: 30%;
+  height: 100vh;
+}
+.menu-info{
+  width: 70%;
+  height: 100vh;
+}
+.brom{
+  width: 100%!important;
+}
+van-sidebar-item{
+  text-align: center;
+}
+.stir-card{
+  margin-top: 20rpx;
+}
+.saute-card{
+  margin-top: 20rpx;
+}

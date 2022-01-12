@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText":"菜单",
+  "usingComponents": {
+    "cloud-tip-modal": "/components/cloudTipModal/index"
+  }
+}

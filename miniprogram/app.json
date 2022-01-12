@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/menu/menu",
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/discount/discount",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "菜单",
+        "iconPath": "/assets/img/tabbar/menu.png",
+        "selectedIconPath": "/assets/img/tabbar/menu_active.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/assets/img/tabbar/order.png",
+        "selectedIconPath": "/assets/img/tabbar/order_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人",
+        "iconPath": "/assets/img/tabbar/profile.png",
+        "selectedIconPath": "/assets/img/tabbar/profile_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

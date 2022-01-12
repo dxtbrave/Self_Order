@@ -1,0 +1,48 @@
+/* pages/profile/childCpns/header/header.wxss */
+.bac{
+  background-color: #017f61;
+}
+.header{
+  position: relative;
+  display: flex;
+  background: #017f61;
+  height: 200rpx;
+  padding: 12rpx 30rpx;
+  color: #fff;
+}
+.avatar{
+  margin-top: 30rpx;
+}
+.avatar image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+  background: #f2f2f2;
+  vertical-align: middle;
+}
+.login-info{
+  vertical-align: middle;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.login-info .login{
+  font-size: 36rpx;
+  margin-top: 18rpx;
+}
+.login-info .phone{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+.arrow {
+  position: absolute;
+  right: 30rpx;
+  margin-top: 60rpx;
+}
+.username{
+  font-size: 36rpx;
+  margin-top: 18rpx;
+}
+.gender{
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}

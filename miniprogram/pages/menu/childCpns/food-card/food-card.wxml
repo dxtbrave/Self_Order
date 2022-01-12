@@ -1,0 +1,21 @@
+<!--pages/menu/childCpns/food_card/food_card.wxml-->
+<view>
+  <!-- thumb="{{ item.imgUrl }}" -->
+  <block wx:for="{{foodList}}" wx:key="index">
+    <view class="card">
+      <van-card price="{{item.price}}" desc="{{'月销量:' + item.sales}}" title="{{item.name}}" custom-class="van-card" title-class="food-title" desc-class="food-sales">
+        <view class="img" slot="thumb">
+          <image src="{{item.imgUrl}}" onload="sendEvent"></image>
+        </view>
+      </van-card>
+      <view class="add">
+        <van-button icon="plus" 
+                    color="#017f61" 
+                    size="small" 
+                    round  
+                    data-info="{{item}}"
+                    bind:click="selectSpec" />
+      </view>
+    </view>
+  </block>
+</view>

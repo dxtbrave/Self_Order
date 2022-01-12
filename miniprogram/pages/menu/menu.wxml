@@ -1,0 +1,59 @@
+<!--pages/menu/menu.wxml-->
+<view class="menu">
+  <!-- 左侧菜品种类选择 -->
+  <scroll-view class="menu-class" scroll-y>
+    <van-sidebar active-key="{{ activeKey }}" custom-class="brom" bind:change="onChange">
+      <block wx:for="{{menuClass}}" wx:key="index">
+          <van-sidebar-item title="{{item}}"/>
+      </block>
+    </van-sidebar>
+  </scroll-view>
+
+  <!-- 右侧菜品详情 -->
+  <scroll-view class="menu-info" scroll-y enhanced bind:scroll="ScrollEvent" scroll-into-view="{{toView}}" >
+    <!-- 汤面类 -->
+    <view class="soup-card" id="soup-card">
+      <food-card foodList="{{soupNoodle}}" 
+                 bind:imageLoad="imageLoad"
+                 bind:selectSpec="selectSpec" />
+    </view>
+    <!-- 拌面类 -->
+    <view class="stir-card" id="stir-card">
+      <food-card foodList="{{stirNoodle}}" 
+                 bind:imageLoad="imageLoad"
+                 bind:selectSpec="selectSpec" />
+    </view>
+    <!-- 炒面类 -->
+    <view class="saute-card" id="saute-card">
+      <!-- <block wx:for="{{sauteNoodle}}" wx:key="index">
+        <view class="card">
+          <van-card price="{{item.price}}" 
+                    desc="{{'月销量:' + item.sales}}" 
+                    title="{{item.name}}" 
+                    thumb="{{ item.imgUrl }}"
+                    custom-class="van-card"
+                    title-class="food-title"
+                    desc-class="food-sales">
+          </van-card>
+          <view class="add">
+            <van-button icon="plus" color="#017f61" size="small" round />
+          </view>
+        </view>
+      </block> -->
+      <food-card foodList="{{sauteNoodle}}" 
+                 bind:imageLoad="imageLoad"
+                 bind:selectSpec="selectSpec" />
+    </view>
+    <view style="height: 600px; background-color: #ffffff;"></view>
+  </scroll-view>
+
+  <!-- 选择菜品规格 -->
+  <van-popup show="{{ isPop }}" 
+             position="bottom" 
+             closeable 
+             round
+             bind:close="closePop" 
+             custom-style="height: 40%">
+              <food-pop info="{{currentInfo}}"/>
+             </van-popup>
+</view>
